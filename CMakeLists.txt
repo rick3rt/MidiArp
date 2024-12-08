@@ -8,5 +8,4 @@ add_subdirectory(thirdparty)
 set(CMAKE_CXX_STANDARD 23)
 
 add_executable(MidiArp src/main.cpp)
-
-target_link_libraries(MidiArp PRIVATE libremidi)
+target_link_libraries(MidiArp PUBLIC libremidi::libremidi)
